@@ -1,5 +1,14 @@
-## Rails 5.2.2 (December 04, 2018) ##
+## Additional stuff
+*   Add `ActiveStorage.routes_prefix` for configuring generated routes.
 
+    *Chris Bisnett*
+
+*   `ActiveStorage::Service::AzureStorageService` only handles specifically
+    relevant types of `Azure::Core::Http::HTTPError`. It previously obscured
+    other types of `HTTPError`, which is the azure-storage gem’s catch-all
+    exception class.
+
+## Rails 5.2.2 (December 04, 2018) ##
 *   Support multiple submit buttons in Active Storage forms.
 
     *Chrıs Seelus*
